@@ -1,0 +1,207 @@
+/* Basic CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+
+/* Navbar Styles */
+
+nav {
+    background-color: #00695c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand a {
+    color: #fff;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggle i {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ffd54f;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to right, #00897b, #004d40), url('hero-bg.jpg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #00695c;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+
+/* About Section */
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #e0f2f1;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    color: #00695c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p,
+.about-section ul {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-section ul {
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 15px;
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+
+/* Go To Top Button */
+
+.go-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #00695c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.go-to-top:hover {
+    background-color: #004d40;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #00695c;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+    .nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    nav.active .nav-menu {
+        display: flex;
+    }
+}
+
+
+/* For smaller screens */
+
+@media (max-width: 480px) {
+    .navbar-brand a {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Interface - DAKSHAAB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="query.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">DAKSHAAB</a>
+        </div>
+        <div class="navbar-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="query.html">Chat</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Sidebar for Chat History -->
+        <aside class="chat-sidebar">
+            <h2><i class="fas fa-history"></i> Chat History</h2>
+
+            <!-- New Chat Button -->
+            <button id="new-chat" class="new-chat-btn"><i class="fas fa-plus"></i> New Chat</button>
+
+            <div id="chat-history">
+                <!-- Chat history items will be appended here -->
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <div class="chat-header">
+                <h2><i class="fas fa-robot"></i> DAKSHAAB</h2>
+            </div>
+            <div id="chat-box">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="message-input">
+                <textarea id="message" placeholder="Type your message here..."></textarea>
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Go to Top Button -->
+    <button class="go-to-top" id="goTop"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Link to JavaScript -->
+    <script src="query.js"></script>
+</body>
+
+</html>
