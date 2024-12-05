@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    {% for comment, prediction in zip(comments, predictions) %}
+        <p><strong>Comment:</strong> {{ comment }}</p>
+        <p><strong>Predicted Doctor Type:</strong> {{ prediction }}</p>
+    {% endfor %}
+    <a href="/">Go Back</a>
+</body>
+</html>
